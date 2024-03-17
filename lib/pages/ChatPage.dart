@@ -88,6 +88,7 @@ class _chatpageState extends State<chatpage> {
         alignment: isSender ? Alignment.centerRight : Alignment.centerLeft,
         child: ChatBubble(
           message: data['message'],
+          isSender: isSender,
         ),
       ),
     );
